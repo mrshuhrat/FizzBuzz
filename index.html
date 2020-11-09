@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ 
+  <div class="container p-3">
+    <p class="h1 text-center mb-4" >Nechta Fizz, nechta Buzz va nechta FizzBuzz?</p>
+    <form class="page-form d-flex w-50 mx-auto mb-5" action="htttps://echo.htmlacademy.ru" method="POST">
+      <input class="number-input form-control w-50 mr-3" type="number" required placeholder="Sonnin kiriting">
+      <button class="btn bg-success w-25 text-white" type="submit">Go</button>
+    </form>
+  
+
+    <div class="d-flex w-75 mx-auto justify-content-between">
+      <ol class="fizz-list m-0 p-0">
+        <p class="font-weight-bold h5">Fizzlar soni <span class="fizz"></span> ta</p>
+      </ol>
+      <ol class="buzz-list m-0 p-0">
+        <p class="font-weight-bold h5">Buzzlar soni <span class="buzz"></span> ta</p>
+      </ol>
+      <ol class="fizzbuzz-list m-0 p-0">
+        <p class="font-weight-bold h5">FizzBuzzlar soni <span class="fizzbuzz"></span> ta</p>
+      </ol>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

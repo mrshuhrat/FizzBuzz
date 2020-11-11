@@ -1,7 +1,3 @@
-var fizzNumbers = [];
-var buzzNumbers = [];
-var fizzBuzzNumbers = [];
-
 var elFizzBuzzForm = document.querySelector('.page-form');
 var elNumberInput = elFizzBuzzForm.querySelector('.number-input');
 var elFizzList = document.querySelector('.fizz-list');
@@ -11,20 +7,24 @@ var elFizzSpan = document.querySelector('.fizz');
 var elBuzzSpan = document.querySelector('.buzz');
 var elFizzBuzzSpan = document.querySelector('.fizzbuzz');
 
-var fizzbuzz = 15;
-var fizz = 3;
-var buzz = 5
+var fizzBuzzNumber = 15;
+var fizzNumber = 3;
+var buzzNumber = 5;
 
 elFizzBuzzForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
+
+  var fizzNumbers = [];
+  var buzzNumbers = [];
+  var fizzBuzzNumbers = [];
   
   var number = elNumberInput.value.trim();
   for (i = 1; i <= number; i++) {
-    if (i % fizzbuzz === 0) {
+    if (i % fizzBuzzNumber === 0) {
       fizzBuzzNumbers.push(i);
-    } else if (i % fizz === 0) {
+    } else if (i % fizzNumber === 0) {
       fizzNumbers.push(i);
-    } else if (i % buzz === 0) {
+    } else if (i % buzzNumber === 0) {
       buzzNumbers.push(i);
     }
   }

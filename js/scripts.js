@@ -11,16 +11,20 @@ var elFizzSpan = document.querySelector('.fizz');
 var elBuzzSpan = document.querySelector('.buzz');
 var elFizzBuzzSpan = document.querySelector('.fizzbuzz');
 
+var fizzbuzz = 15;
+var fizz = 3;
+var buzz = 5
+
 elFizzBuzzForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
   
   var number = elNumberInput.value.trim();
   for (i = 1; i <= number; i++) {
-    if (i % 15 === 0) {
+    if (i % fizzbuzz === 0) {
       fizzBuzzNumbers.push(i);
-    } else if (i % 3 === 0) {
+    } else if (i % fizz === 0) {
       fizzNumbers.push(i);
-    } else if (i % 5 === 0) {
+    } else if (i % buzz === 0) {
       buzzNumbers.push(i);
     }
   }
